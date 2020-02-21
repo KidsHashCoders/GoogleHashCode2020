@@ -1,23 +1,71 @@
 package com.company.model;
 
-import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
-public class Library {
+public class Library implements Scoring {
 
   private int id;
 
-  private List<Book> books;
+  public Map<Integer, Book> books;
 
   private int signUpCost;
 
   private int booksPerDay;
 
+  private int score;
+
+  public Library(int id, int bookSize, int signUpCost, int booksPerDay) {
+    this.id = id;
+    this.signUpCost = signUpCost;
+    this.booksPerDay = booksPerDay;
+    this.books = new LinkedHashMap<>(bookSize);
+  }
+
+  public void updateScore(int daysLeft) {
+    this.score = 0;
+    int readBooks = 0, toRead = (daysLeft - this.signUpCost) * this.booksPerDay;
+    for(Book book : this.books.values()) {
+      if (readBooks == toRead) {
+        break;
+      }
+      this.score += book.getScore();
+      readBooks++;
+    }
+  }
+
   public void addBook(Book book) {
     if (this.books == null) {
-      this.books = new ArrayList<>();
+      this.books = new LinkedHashMap<>();
     }
-    this.books.add(book.getId(), book);
+    this.books.put(book.getId(), book);
+  }
+
+  public void setBooks(List<Book> books) {
+    if (this.books == null) {
+      this.books = new LinkedHashMap<>(books.size());
+    }
+    books.sort(ScoringComparator.instance);
+    for (Book book: books) {
+      this.books.put(book.getId(), book);
+    }
+  }
+
+  public Map<Integer, Book> getBooks() {
+    return books;
+  }
+
+  public void setBooks(Map<Integer, Book> books) {
+    this.books = books;
+  }
+
+  public int getScore() {
+    return score;
+  }
+
+  public void setScore(int score) {
+    this.score = score;
   }
 
   public int getId() {
@@ -26,14 +74,6 @@ public class Library {
 
   public void setId(int id) {
     this.id = id;
-  }
-
-  public List<Book> getBooks() {
-    return books;
-  }
-
-  public void setBooks(List<Book> books) {
-    this.books = books;
   }
 
   public int getSignUpCost() {

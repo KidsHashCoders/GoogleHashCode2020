@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c9ee370-da12-4501-89a5-2ef3f56cda86" name="Default Changelist" comment="" />
+    <list default="true" id="0c9ee370-da12-4501-89a5-2ef3f56cda86" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HC2020/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HC2020/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HC2020/com/company/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HC2020/com/company/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HC2020/com/company/model/BookComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HC2020/com/company/model/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HC2020/com/company/model/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HC2020/com/company/model/LibraryComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HC2020/com/company/utils/FileParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HC2020/com/company/utils/FileParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/return_b.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_b.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Library.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,11 +21,33 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Y58zg2G077OCtLrrEeQnzOyTcx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\code\HC2020" />
+      <recent name="W:\code\HC2020\src\com\company\utils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.company.model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\code\HC2020" />
+      <recent name="W:\code\HC2020\src\com\company" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -39,6 +71,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -52,5 +89,18 @@
       <updated>1582221358644</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
