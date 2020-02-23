@@ -39,6 +39,7 @@ public class Library implements Scoring {
         realReadBooks++;
       }
     }
+    this.score /= this.signUpCost;
   }
 
   public ResultLibrary choseLibrary() {

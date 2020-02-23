@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c9ee370-da12-4501-89a5-2ef3f56cda86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/ResultLibrary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/return_a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_a.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/return_b.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_b.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/return_c.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_c.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/return_d.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_d.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/return_e.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_e.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/return_f.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_f.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/utils/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/utils/FileParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
