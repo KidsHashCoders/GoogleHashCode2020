@@ -3,6 +3,8 @@ package com.company.utils;
 import com.company.model.Book;
 import com.company.model.Library;
 import com.company.model.Problem;
+import com.company.model.ResultLibrary;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -52,19 +54,15 @@ public class FileParser {
     return problem;
   }
 
-  public void writeOutput(String path, Problem problem) throws IOException {
-    this.writeOutput(path, problem.getLibraries());
-  }
-
-  public void writeOutput(String path, List<Library> libraries) throws IOException {
+  public void writeOutput(String path, List<ResultLibrary> libraries) throws IOException {
     BufferedWriter writer = new BufferedWriter(new FileWriter(path));
     writer.write(String.valueOf(libraries.size()));
     writer.newLine();
 
-    for (Library library : libraries) {
-      writer.write(String.format("%d %d", library.getId(), library.books.size()));
+    for (ResultLibrary library : libraries) {
+      writer.write(String.format("%d %d", library.getId(), library.getScannedBooks().size()));
       writer.newLine();
-      for (Book book : library.books.values()) {
+      for (Book book : library.getScannedBooks()) {
         writer.write(String.valueOf(book.getId()));
         writer.write(" ");
       }

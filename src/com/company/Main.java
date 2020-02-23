@@ -1,13 +1,11 @@
 package com.company;
 
-import com.company.model.FileProblem;
-import com.company.model.Library;
-import com.company.model.Problem;
-import com.company.model.ScoringComparator;
+import com.company.model.*;
 import com.company.utils.FileParser;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -22,13 +20,26 @@ public class Main {
 
     private static final FileProblem CHOSEN_FILE = Files.F;
 
+    private static final FileProblem[] FAST_FILES = { Files.A, Files.B, Files.C, Files.E, Files.F };
 
-    private static final List<Library> resultLibraries = new ArrayList<>();
+    private static final boolean ALL = false;
 
     public static void main(String[] args) throws IOException {
-        FileParser fileParser = new FileParser();
-        Problem problem = fileParser.parseFile(CHOSEN_FILE.getInput());
+        if (ALL) {
+            for (FileProblem fileProblem : FAST_FILES) {
+                processProblem(fileProblem);
+            }
+        } else {
+            processProblem(CHOSEN_FILE);
+        }
+    }
 
+    private static void processProblem(FileProblem file) throws IOException {
+        FileParser fileParser = new FileParser();
+        Problem problem = fileParser.parseFile(file.getInput());
+
+
+        final List<ResultLibrary> resultLibraries = new ArrayList<>();
         while (true) {
             if (problem.getDaysLeft() <= 0) {
                 break;
@@ -44,12 +55,10 @@ public class Main {
             problem.libraries.sort(ScoringComparator.instance);
 
             Library bestLibrary = problem.libraries.remove(0);
-            resultLibraries.add(bestLibrary);
+            resultLibraries.add(bestLibrary.choseLibrary());
             problem.setDaysLeft(problem.getDaysLeft() - bestLibrary.getSignUpCost());
         }
 
-        resultLibraries.addAll(problem.libraries);
-
-        fileParser.writeOutput(CHOSEN_FILE.getOutput(), resultLibraries);
+        fileParser.writeOutput(file.getOutput(), resultLibraries);
     }
 }

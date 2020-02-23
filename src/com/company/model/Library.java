@@ -3,6 +3,7 @@ package com.company.model;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Library implements Scoring {
 
@@ -16,6 +17,8 @@ public class Library implements Scoring {
 
   private int score;
 
+  private int realReadBooks;
+
   public Library(int id, int bookSize, int signUpCost, int booksPerDay) {
     this.id = id;
     this.signUpCost = signUpCost;
@@ -25,14 +28,23 @@ public class Library implements Scoring {
 
   public void updateScore(int daysLeft) {
     this.score = 0;
-    int readBooks = 0, toRead = (daysLeft - this.signUpCost) * this.booksPerDay;
+    int toRead = (daysLeft - this.signUpCost) * this.booksPerDay;
+    this.realReadBooks = 0;
     for(Book book : this.books.values()) {
-      if (readBooks == toRead) {
+      if (realReadBooks == toRead) {
         break;
       }
-      this.score += book.getScore();
-      readBooks++;
+      if (!book.isRead()) {
+        this.score += book.getScore();
+        realReadBooks++;
+      }
     }
+  }
+
+  public ResultLibrary choseLibrary() {
+    return new ResultLibrary(this.id, this.books.values().stream().filter(entry ->
+      !entry.isRead()
+    ).limit(this.realReadBooks).peek(entry -> entry.setRead(true)).collect(Collectors.toList()));
   }
 
   public void addBook(Book book) {

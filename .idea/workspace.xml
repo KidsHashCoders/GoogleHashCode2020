@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c9ee370-da12-4501-89a5-2ef3f56cda86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/ResultLibrary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c_incunabula.txt" beforeDir="false" afterPath="$PROJECT_DIR$/c_incunabula.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d_tough_choices.txt" beforeDir="false" afterPath="$PROJECT_DIR$/d_tough_choices.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_so_many_books.txt" beforeDir="false" afterPath="$PROJECT_DIR$/e_so_many_books.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f_libraries_of_the_world.txt" beforeDir="false" afterPath="$PROJECT_DIR$/f_libraries_of_the_world.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/return_a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/return_a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_a.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/return_b.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_b.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/return_c.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_c.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/return_d.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_d.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/return_e.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_e.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/return_f.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_f.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/utils/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/utils/FileParser.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +32,13 @@
   </component>
   <component name="ProjectId" id="1Y58zg2G077OCtLrrEeQnzOyTcx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -46,18 +54,6 @@
       <recent name="W:\code\HC2020" />
       <recent name="W:\code\HC2020\src\com\company" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -101,5 +97,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="209" key="#com.intellij.ide.util.MemberChooser" timestamp="1582466372368">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="209" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1582466372367" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1582469665757">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582469665757" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1582469665756">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582469665756" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1582469665756">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582469665756" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1582469665757">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582469665757" />
+    <state x="661" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1582464817309">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="661" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1582464817309" />
   </component>
 </project>
