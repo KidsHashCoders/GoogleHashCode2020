@@ -53,11 +53,15 @@ public class FileParser {
   }
 
   public void writeOutput(String path, Problem problem) throws IOException {
+    this.writeOutput(path, problem.getLibraries());
+  }
+
+  public void writeOutput(String path, List<Library> libraries) throws IOException {
     BufferedWriter writer = new BufferedWriter(new FileWriter(path));
-    writer.write(String.valueOf(problem.getLibraryNumber()));
+    writer.write(String.valueOf(libraries.size()));
     writer.newLine();
 
-    for (Library library : problem.libraries) {
+    for (Library library : libraries) {
       writer.write(String.format("%d %d", library.getId(), library.books.size()));
       writer.newLine();
       for (Book book : library.books.values()) {

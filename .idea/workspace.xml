@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0c9ee370-da12-4501-89a5-2ef3f56cda86" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HC2020/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HC2020/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HC2020/com/company/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HC2020/com/company/model/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HC2020/com/company/model/BookComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HC2020/com/company/model/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HC2020/com/company/model/Library.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HC2020/com/company/model/LibraryComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HC2020/com/company/utils/FileParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HC2020/com/company/utils/FileParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/return_b.txt" beforeDir="false" afterPath="$PROJECT_DIR$/return_b.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c_incunabula.txt" beforeDir="false" afterPath="$PROJECT_DIR$/c_incunabula.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d_tough_choices.txt" beforeDir="false" afterPath="$PROJECT_DIR$/d_tough_choices.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_so_many_books.txt" beforeDir="false" afterPath="$PROJECT_DIR$/e_so_many_books.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f_libraries_of_the_world.txt" beforeDir="false" afterPath="$PROJECT_DIR$/f_libraries_of_the_world.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/return_a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/utils/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/utils/FileParser.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

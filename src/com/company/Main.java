@@ -6,6 +6,8 @@ import com.company.model.Problem;
 import com.company.model.ScoringComparator;
 import com.company.utils.FileParser;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -18,18 +20,36 @@ public class Main {
         private static final FileProblem F = new FileProblem("f_libraries_of_the_world.txt", "return_f.txt");
     }
 
-    private static final FileProblem CHOSEN_FILE = Files.B;
+    private static final FileProblem CHOSEN_FILE = Files.F;
 
+
+    private static final List<Library> resultLibraries = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
         FileParser fileParser = new FileParser();
         Problem problem = fileParser.parseFile(CHOSEN_FILE.getInput());
-        for (Library library : problem.libraries) {
-          library.updateScore(problem.getDaysLeft());
+
+        while (true) {
+            if (problem.getDaysLeft() <= 0) {
+                break;
+            }
+
+            if (problem.getLibraries().size() == 0) {
+                break;
+            }
+
+            for (Library library : problem.libraries) {
+                library.updateScore(problem.getDaysLeft());
+            }
+            problem.libraries.sort(ScoringComparator.instance);
+
+            Library bestLibrary = problem.libraries.remove(0);
+            resultLibraries.add(bestLibrary);
+            problem.setDaysLeft(problem.getDaysLeft() - bestLibrary.getSignUpCost());
         }
 
-        problem.libraries.sort(ScoringComparator.instance);
+        resultLibraries.addAll(problem.libraries);
 
-        fileParser.writeOutput(CHOSEN_FILE.getOutput(), problem);
+        fileParser.writeOutput(CHOSEN_FILE.getOutput(), resultLibraries);
     }
 }
